@@ -1,0 +1,9 @@
+flask
+flask-session
+requests
+python-dateutil
+google-auth
+google-auth-oauthlib
+google-api-python-client
+sqlalchemy
+python-dotenv

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login - AI Assistant</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>🔐 Sign In</h1>
+			<p>Connect your Google account to enable calendar and email features</p>
+		</div>
+
+		<div style="text-align: center; padding: 40px;">
+			<div style="background: #f8f9fa; padding: 30px; border-radius: 15px; margin: 20px auto; max-width: 400px;">
+				<h2>Google Calendar & Email Integration</h2>
+				<p>Sign in with Google to manage calendar events, reminders, and sort emails</p>
+                
+				<a href="{{ url_for('login') }}" style="display: inline-block; background: #4285F4; color: white; 
+				   padding: 15px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; margin: 20px 0;">
+					Sign in with Google
+				</a>
+                
+				<div style="margin-top: 20px; padding: 15px; background: #e3f2fd; border-radius: 8px;">
+					<h3>📋 What we'll access:</h3>
+					<ul style="text-align: left; margin: 15px 0;">
+						<li>Create and view calendar events</li>
+						<li>Manage your reminders</li>
+						<li>Read and sort emails</li>
+						<li>Basic profile information</li>
+					</ul>
+				</div>
+			</div>
+            
+			<div style="margin-top: 30px;">
+				<a href="{{ url_for('home') }}" style="color: #007bff; text-decoration: none;">
+					← Back to Assistant
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,255 @@
+2025-08-24 02:21:18,169 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.238.191:5000
+2025-08-24 02:21:18,169 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-24 02:21:18,173 - INFO -  * Restarting with stat
+2025-08-24 02:22:32,106 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.238.191:5000
+2025-08-24 02:22:32,107 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-24 02:22:32,112 - INFO -  * Restarting with stat
+2025-08-24 02:23:48,469 - INFO - 127.0.0.1 - - [24/Aug/2025 02:23:48] "GET / HTTP/1.1" 200 -
+2025-08-24 02:23:49,229 - INFO - 127.0.0.1 - - [24/Aug/2025 02:23:49] "GET /static/style.css HTTP/1.1" 200 -
+2025-08-24 02:23:54,815 - INFO - 127.0.0.1 - - [24/Aug/2025 02:23:54] "[33mGET /setup HTTP/1.1[0m" 404 -
+2025-08-24 02:23:54,909 - INFO - 127.0.0.1 - - [24/Aug/2025 02:23:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-08-24 02:24:34,058 - INFO - 127.0.0.1 - - [24/Aug/2025 02:24:34] "GET /dashboard HTTP/1.1" 200 -
+2025-08-24 02:24:34,154 - INFO - 127.0.0.1 - - [24/Aug/2025 02:24:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-24 02:24:44,587 - INFO - 127.0.0.1 - - [24/Aug/2025 02:24:44] "GET / HTTP/1.1" 200 -
+2025-08-24 02:24:44,785 - INFO - 127.0.0.1 - - [24/Aug/2025 02:24:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-24 02:24:58,068 - INFO - 127.0.0.1 - - [24/Aug/2025 02:24:58] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 02:26:41,859 - INFO - 127.0.0.1 - - [24/Aug/2025 02:26:41] "[32mGET /login HTTP/1.1[0m" 302 -
+2025-08-24 02:28:29,455 - INFO - 127.0.0.1 - - [24/Aug/2025 02:28:29] "[33mGET /setup HTTP/1.1[0m" 404 -
+2025-08-24 02:29:53,732 - INFO - 127.0.0.1 - - [24/Aug/2025 02:29:53] "GET /dashboard HTTP/1.1" 200 -
+2025-08-24 02:29:54,003 - INFO - 127.0.0.1 - - [24/Aug/2025 02:29:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-24 02:29:57,905 - INFO - 127.0.0.1 - - [24/Aug/2025 02:29:57] "GET / HTTP/1.1" 200 -
+2025-08-24 02:29:58,227 - INFO - 127.0.0.1 - - [24/Aug/2025 02:29:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-24 02:30:08,710 - INFO - 127.0.0.1 - - [24/Aug/2025 02:30:08] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 02:30:13,766 - INFO - 127.0.0.1 - - [24/Aug/2025 02:30:13] "GET /dashboard HTTP/1.1" 200 -
+2025-08-24 02:30:14,037 - INFO - 127.0.0.1 - - [24/Aug/2025 02:30:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-24 02:30:20,127 - INFO - 127.0.0.1 - - [24/Aug/2025 02:30:20] "GET / HTTP/1.1" 200 -
+2025-08-24 02:30:20,378 - INFO - 127.0.0.1 - - [24/Aug/2025 02:30:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-24 02:30:24,445 - INFO - 127.0.0.1 - - [24/Aug/2025 02:30:24] "GET /dashboard HTTP/1.1" 200 -
+2025-08-24 02:30:24,702 - INFO - 127.0.0.1 - - [24/Aug/2025 02:30:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-24 02:31:49,025 - INFO - 127.0.0.1 - - [24/Aug/2025 02:31:49] "GET / HTTP/1.1" 200 -
+2025-08-24 02:31:49,297 - INFO - 127.0.0.1 - - [24/Aug/2025 02:31:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-24 02:31:52,123 - INFO - 127.0.0.1 - - [24/Aug/2025 02:31:52] "[33mGET /setup HTTP/1.1[0m" 404 -
+2025-08-24 02:36:38,018 - INFO - 127.0.0.1 - - [24/Aug/2025 02:36:38] "[33mGET /setup HTTP/1.1[0m" 404 -
+2025-08-24 03:12:29,529 - INFO - 127.0.0.1 - - [24/Aug/2025 03:12:29] "GET / HTTP/1.1" 200 -
+2025-08-24 03:12:29,646 - INFO - 127.0.0.1 - - [24/Aug/2025 03:12:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-24 03:12:33,327 - INFO - 127.0.0.1 - - [24/Aug/2025 03:12:33] "[33mGET /setup HTTP/1.1[0m" 404 -
+2025-08-24 03:13:14,490 - INFO - 127.0.0.1 - - [24/Aug/2025 03:13:14] "GET / HTTP/1.1" 200 -
+2025-08-24 03:13:14,546 - INFO - 127.0.0.1 - - [24/Aug/2025 03:13:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-24 03:13:18,071 - INFO - 127.0.0.1 - - [24/Aug/2025 03:13:18] "[33mGET /setup HTTP/1.1[0m" 404 -
+2025-08-24 03:13:18,442 - INFO - 127.0.0.1 - - [24/Aug/2025 03:13:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-08-24 03:14:12,070 - INFO - 127.0.0.1 - - [24/Aug/2025 03:14:12] "[33mGET /setup HTTP/1.1[0m" 404 -
+2025-08-24 03:19:38,075 - INFO - 127.0.0.1 - - [24/Aug/2025 03:19:38] "[33mGET /setup HTTP/1.1[0m" 404 -
+2025-08-24 03:23:02,602 - INFO - 127.0.0.1 - - [24/Aug/2025 03:23:02] "[33mGET /setup HTTP/1.1[0m" 404 -
+2025-08-24 03:36:27,112 - INFO - 127.0.0.1 - - [24/Aug/2025 03:36:27] "[33mGET /setup HTTP/1.1[0m" 404 -
+2025-08-24 03:39:24,253 - INFO - 127.0.0.1 - - [24/Aug/2025 03:39:24] "[33mGET /setup HTTP/1.1[0m" 404 -
+2025-08-24 03:39:27,539 - INFO - 127.0.0.1 - - [24/Aug/2025 03:39:27] "[33mGET /setup HTTP/1.1[0m" 404 -
+2025-08-24 03:39:28,479 - INFO - 127.0.0.1 - - [24/Aug/2025 03:39:28] "[33mGET /setup HTTP/1.1[0m" 404 -
+2025-08-24 03:49:25,577 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.238.191:5000
+2025-08-24 03:49:25,579 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-24 03:49:25,585 - INFO -  * Restarting with stat
+2025-08-24 03:49:52,536 - INFO - 127.0.0.1 - - [24/Aug/2025 03:49:52] "GET / HTTP/1.1" 200 -
+2025-08-24 03:49:52,851 - INFO - 127.0.0.1 - - [24/Aug/2025 03:49:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-24 03:49:55,832 - INFO - 127.0.0.1 - - [24/Aug/2025 03:49:55] "GET /setup HTTP/1.1" 200 -
+2025-08-24 03:49:56,138 - INFO - 127.0.0.1 - - [24/Aug/2025 03:49:56] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-08-24 03:49:59,672 - INFO - 127.0.0.1 - - [24/Aug/2025 03:49:59] "GET / HTTP/1.1" 200 -
+2025-08-24 03:49:59,979 - INFO - 127.0.0.1 - - [24/Aug/2025 03:49:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-24 03:51:06,059 - INFO - 127.0.0.1 - - [24/Aug/2025 03:51:06] "GET /test-calendar HTTP/1.1" 200 -
+2025-08-24 03:53:45,213 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.238.191:5000
+2025-08-24 03:53:45,213 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-24 03:53:45,220 - INFO -  * Restarting with stat
+2025-08-24 03:56:48,572 - INFO - 127.0.0.1 - - [24/Aug/2025 03:56:48] "GET / HTTP/1.1" 200 -
+2025-08-24 03:56:49,117 - INFO - 127.0.0.1 - - [24/Aug/2025 03:56:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-24 03:56:51,191 - INFO - 127.0.0.1 - - [24/Aug/2025 03:56:51] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 03:56:55,623 - INFO - 127.0.0.1 - - [24/Aug/2025 03:56:55] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 03:57:00,300 - INFO - 127.0.0.1 - - [24/Aug/2025 03:57:00] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 03:57:04,499 - INFO - 127.0.0.1 - - [24/Aug/2025 03:57:04] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 03:57:19,568 - INFO - 127.0.0.1 - - [24/Aug/2025 03:57:19] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 03:57:27,042 - INFO - 127.0.0.1 - - [24/Aug/2025 03:57:27] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 04:01:09,085 - INFO - 127.0.0.1 - - [24/Aug/2025 04:01:09] "GET / HTTP/1.1" 200 -
+2025-08-24 04:01:09,181 - INFO - 127.0.0.1 - - [24/Aug/2025 04:01:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-24 04:01:12,693 - INFO - 127.0.0.1 - - [24/Aug/2025 04:01:12] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 04:01:21,058 - INFO - 127.0.0.1 - - [24/Aug/2025 04:01:21] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 04:02:17,835 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.238.191:5000
+2025-08-24 04:02:17,836 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-24 04:02:17,840 - INFO -  * Restarting with stat
+2025-08-24 04:02:24,589 - INFO - 127.0.0.1 - - [24/Aug/2025 04:02:24] "GET / HTTP/1.1" 200 -
+2025-08-24 04:02:24,910 - INFO - 127.0.0.1 - - [24/Aug/2025 04:02:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-24 04:02:32,506 - INFO - 127.0.0.1 - - [24/Aug/2025 04:02:32] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 04:02:41,502 - INFO - 127.0.0.1 - - [24/Aug/2025 04:02:41] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 04:05:14,367 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.238.191:5000
+2025-08-24 04:05:14,368 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-24 04:05:14,377 - INFO -  * Restarting with stat
+2025-08-24 04:05:23,239 - INFO - 127.0.0.1 - - [24/Aug/2025 04:05:23] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 04:05:25,297 - INFO - 127.0.0.1 - - [24/Aug/2025 04:05:25] "GET / HTTP/1.1" 200 -
+2025-08-24 04:05:25,642 - INFO - 127.0.0.1 - - [24/Aug/2025 04:05:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-24 04:05:31,129 - INFO - 127.0.0.1 - - [24/Aug/2025 04:05:31] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 04:08:32,225 - INFO - 127.0.0.1 - - [24/Aug/2025 04:08:32] "GET / HTTP/1.1" 200 -
+2025-08-24 04:08:32,268 - INFO - 127.0.0.1 - - [24/Aug/2025 04:08:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-24 04:08:36,151 - INFO - 127.0.0.1 - - [24/Aug/2025 04:08:36] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 04:11:05,204 - INFO - 127.0.0.1 - - [24/Aug/2025 04:11:05] "GET / HTTP/1.1" 200 -
+2025-08-24 04:11:05,278 - INFO - 127.0.0.1 - - [24/Aug/2025 04:11:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-24 04:11:07,983 - INFO - 127.0.0.1 - - [24/Aug/2025 04:11:07] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 04:11:44,198 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.238.191:5000
+2025-08-24 04:11:44,200 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-24 04:11:44,206 - INFO -  * Restarting with stat
+2025-08-24 04:11:47,449 - WARNING -  * Debugger is active!
+2025-08-24 04:11:47,474 - INFO -  * Debugger PIN: 600-750-221
+2025-08-24 04:11:59,195 - INFO - 127.0.0.1 - - [24/Aug/2025 04:11:59] "GET / HTTP/1.1" 200 -
+2025-08-24 04:11:59,197 - INFO - 127.0.0.1 - - [24/Aug/2025 04:11:59] "GET / HTTP/1.1" 200 -
+2025-08-24 04:11:59,203 - INFO - 127.0.0.1 - - [24/Aug/2025 04:11:59] "GET / HTTP/1.1" 200 -
+2025-08-24 04:11:59,504 - INFO - 127.0.0.1 - - [24/Aug/2025 04:11:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-24 04:12:05,630 - INFO - 127.0.0.1 - - [24/Aug/2025 04:12:05] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 04:12:30,015 - INFO - 127.0.0.1 - - [24/Aug/2025 04:12:30] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 04:12:42,141 - INFO - 127.0.0.1 - - [24/Aug/2025 04:12:42] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 04:20:09,491 - INFO - 127.0.0.1 - - [24/Aug/2025 04:20:09] "GET /dashboard HTTP/1.1" 200 -
+2025-08-24 04:20:09,635 - INFO - 127.0.0.1 - - [24/Aug/2025 04:20:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-24 04:20:10,070 - INFO - 127.0.0.1 - - [24/Aug/2025 04:20:10] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-08-24 04:20:32,108 - INFO - 127.0.0.1 - - [24/Aug/2025 04:20:32] "GET / HTTP/1.1" 200 -
+2025-08-24 04:20:32,305 - INFO - 127.0.0.1 - - [24/Aug/2025 04:20:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-24 04:20:35,894 - INFO - 127.0.0.1 - - [24/Aug/2025 04:20:35] "GET /setup HTTP/1.1" 200 -
+2025-08-24 04:20:40,891 - INFO - 127.0.0.1 - - [24/Aug/2025 04:20:40] "GET /test-calendar HTTP/1.1" 200 -
+2025-08-24 04:22:23,310 - INFO - 127.0.0.1 - - [24/Aug/2025 04:22:23] "GET /test-calendar HTTP/1.1" 200 -
+2025-08-24 04:22:39,657 - INFO - 127.0.0.1 - - [24/Aug/2025 04:22:39] "GET / HTTP/1.1" 200 -
+2025-08-24 04:22:39,716 - INFO - 127.0.0.1 - - [24/Aug/2025 04:22:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-24 04:22:43,712 - INFO - 127.0.0.1 - - [24/Aug/2025 04:22:43] "GET /status HTTP/1.1" 200 -
+2025-08-24 04:23:14,019 - INFO - 127.0.0.1 - - [24/Aug/2025 04:23:14] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 04:23:31,436 - INFO - 127.0.0.1 - - [24/Aug/2025 04:23:31] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 04:23:42,795 - INFO - 127.0.0.1 - - [24/Aug/2025 04:23:42] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 04:23:53,047 - INFO - 127.0.0.1 - - [24/Aug/2025 04:23:53] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 04:24:03,274 - INFO - 127.0.0.1 - - [24/Aug/2025 04:24:03] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 04:24:13,670 - INFO - 127.0.0.1 - - [24/Aug/2025 04:24:13] "GET /dashboard HTTP/1.1" 200 -
+2025-08-24 04:24:13,769 - INFO - 127.0.0.1 - - [24/Aug/2025 04:24:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-24 04:24:36,995 - INFO - 127.0.0.1 - - [24/Aug/2025 04:24:36] "GET / HTTP/1.1" 200 -
+2025-08-24 04:24:37,296 - INFO - 127.0.0.1 - - [24/Aug/2025 04:24:37] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-24 04:24:46,110 - INFO - 127.0.0.1 - - [24/Aug/2025 04:24:46] "GET /setup HTTP/1.1" 200 -
+2025-08-24 04:25:14,800 - INFO - 127.0.0.1 - - [24/Aug/2025 04:25:14] "GET / HTTP/1.1" 200 -
+2025-08-24 04:25:15,078 - INFO - 127.0.0.1 - - [24/Aug/2025 04:25:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-24 04:25:45,305 - INFO - 127.0.0.1 - - [24/Aug/2025 04:25:45] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 04:25:48,374 - INFO - 127.0.0.1 - - [24/Aug/2025 04:25:48] "[32mGET /login HTTP/1.1[0m" 302 -
+2025-08-24 04:33:27,115 - INFO -  * Detected change in 'c:\\Grok_AI\\app.py', reloading
+2025-08-24 04:33:28,284 - INFO -  * Restarting with stat
+2025-08-24 04:33:33,854 - WARNING -  * Debugger is active!
+2025-08-24 04:33:33,893 - INFO -  * Debugger PIN: 600-750-221
+2025-08-24 04:34:03,950 - INFO -  * Detected change in 'c:\\Grok_AI\\app.py', reloading
+2025-08-24 04:34:04,286 - INFO -  * Restarting with stat
+2025-08-24 04:34:06,880 - WARNING -  * Debugger is active!
+2025-08-24 04:34:06,892 - INFO -  * Debugger PIN: 600-750-221
+2025-08-24 04:34:16,515 - INFO - 127.0.0.1 - - [24/Aug/2025 04:34:16] "GET / HTTP/1.1" 200 -
+2025-08-24 04:34:16,839 - INFO - 127.0.0.1 - - [24/Aug/2025 04:34:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-24 04:34:31,075 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.238.191:5000
+2025-08-24 04:34:31,076 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-24 04:34:31,081 - INFO -  * Restarting with stat
+2025-08-24 04:34:34,152 - WARNING -  * Debugger is active!
+2025-08-24 04:34:34,169 - INFO -  * Debugger PIN: 600-750-221
+2025-08-24 04:35:48,946 - INFO - 127.0.0.1 - - [24/Aug/2025 04:35:48] "GET / HTTP/1.1" 200 -
+2025-08-24 04:35:49,246 - INFO - 127.0.0.1 - - [24/Aug/2025 04:35:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-24 04:36:10,093 - INFO - 127.0.0.1 - - [24/Aug/2025 04:36:10] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 04:36:38,711 - INFO - 127.0.0.1 - - [24/Aug/2025 04:36:38] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 04:37:27,617 - INFO - 127.0.0.1 - - [24/Aug/2025 04:37:27] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 04:38:29,897 - INFO - 127.0.0.1 - - [24/Aug/2025 04:38:29] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 04:39:12,188 - INFO - 127.0.0.1 - - [24/Aug/2025 04:39:12] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 04:41:02,270 - INFO - 127.0.0.1 - - [24/Aug/2025 04:41:02] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 04:41:06,404 - INFO - 127.0.0.1 - - [24/Aug/2025 04:41:06] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 04:41:09,524 - INFO - 127.0.0.1 - - [24/Aug/2025 04:41:09] "GET /status HTTP/1.1" 200 -
+2025-08-24 04:44:49,168 - INFO - 127.0.0.1 - - [24/Aug/2025 04:44:49] "[32mGET /login HTTP/1.1[0m" 302 -
+2025-08-24 04:47:10,532 - INFO -  * Detected change in 'c:\\Grok_AI\\app.py', reloading
+2025-08-24 04:47:11,749 - INFO -  * Restarting with stat
+2025-08-24 04:47:17,254 - WARNING -  * Debugger is active!
+2025-08-24 04:47:17,278 - INFO -  * Debugger PIN: 600-750-221
+2025-08-24 04:47:25,114 - INFO -  * Detected change in 'c:\\Grok_AI\\app.py', reloading
+2025-08-24 04:47:25,511 - INFO -  * Restarting with stat
+2025-08-24 04:47:29,666 - WARNING -  * Debugger is active!
+2025-08-24 04:47:29,677 - INFO -  * Debugger PIN: 600-750-221
+2025-08-24 04:59:26,210 - INFO - 127.0.0.1 - - [24/Aug/2025 04:59:26] "GET / HTTP/1.1" 200 -
+2025-08-24 04:59:26,654 - INFO - 127.0.0.1 - - [24/Aug/2025 04:59:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-24 04:59:36,906 - INFO - 127.0.0.1 - - [24/Aug/2025 04:59:36] "GET / HTTP/1.1" 200 -
+2025-08-24 04:59:36,997 - INFO - 127.0.0.1 - - [24/Aug/2025 04:59:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-24 05:01:58,206 - INFO - 127.0.0.1 - - [24/Aug/2025 05:01:58] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 05:02:00,541 - ERROR - Login error: Client secrets must be for a web or installed app.
+2025-08-24 05:02:00,552 - INFO - 127.0.0.1 - - [24/Aug/2025 05:02:00] "GET /login HTTP/1.1" 200 -
+2025-08-24 05:03:39,635 - INFO - 127.0.0.1 - - [24/Aug/2025 05:03:39] "GET /setup HTTP/1.1" 200 -
+2025-08-24 05:06:24,721 - ERROR - OAuth2 callback error: Client secrets must be for a web or installed app.
+2025-08-24 05:06:24,727 - INFO - 127.0.0.1 - - [24/Aug/2025 05:06:24] "GET /oauth2callback HTTP/1.1" 200 -
+2025-08-24 05:37:15,820 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.238.191:5000
+2025-08-24 05:37:15,823 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-24 05:37:15,845 - INFO -  * Restarting with stat
+2025-08-24 05:37:18,903 - WARNING -  * Debugger is active!
+2025-08-24 05:37:18,945 - INFO -  * Debugger PIN: 600-750-221
+2025-08-24 05:37:28,499 - INFO - 127.0.0.1 - - [24/Aug/2025 05:37:28] "GET /test-calendar HTTP/1.1" 200 -
+2025-08-24 05:37:38,423 - INFO - 127.0.0.1 - - [24/Aug/2025 05:37:38] "GET / HTTP/1.1" 200 -
+2025-08-24 05:37:39,187 - INFO - 127.0.0.1 - - [24/Aug/2025 05:37:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-24 05:37:43,538 - INFO - 127.0.0.1 - - [24/Aug/2025 05:37:43] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 05:37:45,439 - INFO - 127.0.0.1 - - [24/Aug/2025 05:37:45] "[32mGET /login HTTP/1.1[0m" 302 -
+2025-08-24 05:38:54,527 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.238.191:5000
+2025-08-24 05:38:54,527 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-24 05:38:54,532 - INFO -  * Restarting with stat
+2025-08-24 05:38:57,064 - WARNING -  * Debugger is active!
+2025-08-24 05:38:57,107 - INFO -  * Debugger PIN: 600-750-221
+2025-08-24 05:39:02,055 - INFO - 127.0.0.1 - - [24/Aug/2025 05:39:02] "GET / HTTP/1.1" 200 -
+2025-08-24 05:39:02,334 - INFO - 127.0.0.1 - - [24/Aug/2025 05:39:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-24 05:39:04,954 - INFO - 127.0.0.1 - - [24/Aug/2025 05:39:04] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 05:39:06,577 - INFO - 127.0.0.1 - - [24/Aug/2025 05:39:06] "[32mGET /login HTTP/1.1[0m" 302 -
+2025-08-24 12:09:52,450 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.238.191:5000
+2025-08-24 12:09:52,451 - INFO - [33mPress CTRL+C to quit[0m
+2025-08-24 12:09:52,462 - INFO -  * Restarting with stat
+2025-08-24 12:09:56,920 - WARNING -  * Debugger is active!
+2025-08-24 12:09:56,937 - INFO -  * Debugger PIN: 258-116-626
+2025-08-24 12:10:15,250 - INFO - 127.0.0.1 - - [24/Aug/2025 12:10:15] "GET / HTTP/1.1" 200 -
+2025-08-24 12:10:15,772 - INFO - 127.0.0.1 - - [24/Aug/2025 12:10:15] "GET /static/style.css HTTP/1.1" 200 -
+2025-08-24 12:16:53,573 - INFO - 127.0.0.1 - - [24/Aug/2025 12:16:53] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 12:17:16,186 - INFO - 127.0.0.1 - - [24/Aug/2025 12:17:16] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 12:20:52,656 - INFO - 127.0.0.1 - - [24/Aug/2025 12:20:52] "GET /dashboard HTTP/1.1" 200 -
+2025-08-24 12:20:52,747 - INFO - 127.0.0.1 - - [24/Aug/2025 12:20:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-24 12:20:53,176 - INFO - 127.0.0.1 - - [24/Aug/2025 12:20:53] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-08-24 12:21:00,068 - INFO - 127.0.0.1 - - [24/Aug/2025 12:21:00] "GET / HTTP/1.1" 200 -
+2025-08-24 12:21:00,385 - INFO - 127.0.0.1 - - [24/Aug/2025 12:21:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-24 12:21:05,678 - INFO - 127.0.0.1 - - [24/Aug/2025 12:21:05] "GET /dashboard HTTP/1.1" 200 -
+2025-08-24 12:21:05,987 - INFO - 127.0.0.1 - - [24/Aug/2025 12:21:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-24 12:21:08,135 - INFO - 127.0.0.1 - - [24/Aug/2025 12:21:08] "GET / HTTP/1.1" 200 -
+2025-08-24 12:21:08,470 - INFO - 127.0.0.1 - - [24/Aug/2025 12:21:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-24 12:21:14,317 - INFO - 127.0.0.1 - - [24/Aug/2025 12:21:14] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 12:21:23,248 - INFO - 127.0.0.1 - - [24/Aug/2025 12:21:23] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 12:21:37,496 - INFO - 127.0.0.1 - - [24/Aug/2025 12:21:37] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 12:21:46,829 - INFO - 127.0.0.1 - - [24/Aug/2025 12:21:46] "GET /setup HTTP/1.1" 200 -
+2025-08-24 12:21:51,745 - INFO - 127.0.0.1 - - [24/Aug/2025 12:21:51] "GET /test-calendar HTTP/1.1" 200 -
+2025-08-24 12:22:00,516 - INFO - 127.0.0.1 - - [24/Aug/2025 12:22:00] "GET / HTTP/1.1" 200 -
+2025-08-24 12:22:00,839 - INFO - 127.0.0.1 - - [24/Aug/2025 12:22:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-08-24 12:22:16,731 - INFO - 127.0.0.1 - - [24/Aug/2025 12:22:16] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 12:22:43,275 - INFO - 127.0.0.1 - - [24/Aug/2025 12:22:43] "POST /api/process_command HTTP/1.1" 200 -
+2025-08-24 12:23:47,808 - INFO - 127.0.0.1 - - [24/Aug/2025 12:23:47] "GET /status HTTP/1.1" 200 -
+2025-08-24 12:24:40,405 - INFO - 127.0.0.1 - - [24/Aug/2025 12:24:40] "GET /setup HTTP/1.1" 200 -
+2025-08-24 12:24:48,605 - INFO - 127.0.0.1 - - [24/Aug/2025 12:24:48] "GET / HTTP/1.1" 200 -
+2025-08-24 12:24:48,916 - INFO - 127.0.0.1 - - [24/Aug/2025 12:24:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -

@@ -1,0 +1,175 @@
+<!-- setup.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Calendar Setup Guide</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        .step {
+            background: #f8f9fa;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            border-left: 4px solid #007bff;
+        }
+        .code {
+            background: #2c3e50;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+        }
+        .note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .success {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .btn {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            margin: 10px 5px;
+        }
+        .btn:hover,
+        .btn:focus {
+            background: #0056b3;
+            outline: 2px solid #0056b3;
+            outline-offset: 2px;
+        }
+        :focus {
+            outline: 2px solid #007bff;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" role="main">
+        <h1>🔧 Google Calendar Integration Setup</h1>
+        <p>Follow these steps to enable Google Calendar integration for your AI Assistant:</p>
+
+        <div class="step" role="region" aria-label="Step 1">
+            <h2>Step 1: Go to Google Cloud Console</h2>
+            <a href="https://console.cloud.google.com/" target="_blank" class="btn" aria-label="Open Google Cloud Console">Open Google Cloud Console</a>
+            <p>Sign in with your Google account</p>
+        </div>
+
+        <div class="step" role="region" aria-label="Step 2">
+            <h2>Step 2: Create a New Project</h2>
+            <ul>
+                <li>Click on the project dropdown</li>
+                <li>Select "New Project"</li>
+                <li>Name it "AI Assistant" or similar</li>
+                <li>Click "Create"</li>
+            </ul>
+        </div>
+
+        <div class="step" role="region" aria-label="Step 3">
+            <h2>Step 3: Enable Calendar API</h2>
+            <ul>
+                <li>Go to "APIs & Services" → "Library"</li>
+                <li>Search for "Calendar API"</li>
+                <li>Click on "Google Calendar API"</li>
+                <li>Click "Enable"</li>
+            </ul>
+        </div>
+
+        <div class="step" role="region" aria-label="Step 4">
+            <h2>Step 4: Create OAuth 2.0 Credentials</h2>
+            <ul>
+                <li>Go to "APIs & Services" → "Credentials"</li>
+                <li>Click "Create Credentials" → "OAuth 2.0 Client ID"</li>
+                <li>Select "Desktop application" as application type</li>
+                <li>Name it "AI Assistant Desktop"</li>
+                <li>Click "Create"</li>
+            </ul>
+        </div>
+
+        <div class="step" role="region" aria-label="Step 5">
+            <h2>Step 5: Download credentials.json</h2>
+            <ul>
+                <li>After creating credentials, click the download button (📥)</li>
+                <li>Save the file as <strong>credentials.json</strong></li>
+                <li>Place it in your project folder (same directory as app.py)</li>
+            </ul>
+        </div>
+
+        <div class="step" role="region" aria-label="Step 6">
+            <h2>Step 6: Configure OAuth Consent Screen</h2>
+            <ul>
+                <li>Go to "OAuth consent screen"</li>
+                <li>Select "External" user type</li>
+                <li>Fill in app name: "AI Personal Assistant"</li>
+                <li>Add your email as developer contact</li>
+                <li>Add scope: <code>.../auth/calendar.events</code></li>
+                <li>Add scope: <code>.../auth/gmail.modify</code></li>
+                <li>Add test users (your email)</li>
+                <li>Save and continue</li>
+            </ul>
+        </div>
+
+        <div class="note">
+            <h3>⚠️ Important Notes:</h3>
+            <ul>
+                <li>This setup is for <strong>development/demo purposes</strong></li>
+                <li>For production, you'd need to verify the app with Google</li>
+                <li>The first time you use it, you'll need to authenticate via browser</li>
+            </ul>
+        </div>
+
+        <div class="success">
+            <h3>✅ Expected credentials.json structure:</h3>
+            <div class="code">
+{
+  "installed": {
+    "client_id": "your-actual-client-id.apps.googleusercontent.com",
+    "project_id": "your-project-id",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_secret": "your-actual-client-secret",
+    "redirect_uris": ["http://localhost:5000/callback"]
+  }
+}
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;" role="navigation">
+            <a href="/" class="btn" aria-label="Return to main assistant page">← Back to Assistant</a>
+            <a href="/test-calendar" class="btn" aria-label="Test calendar integration">Test Calendar Integration</a>
+        </div>
+    </div>
+</body>
+</html>

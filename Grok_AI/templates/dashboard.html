@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dashboard - AI Assistant</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+	<div class="dashboard" role="main">
+		<div class="header" role="banner">
+			<h1>📊 Assistant Dashboard</h1>
+			<p>Analytics and usage statistics</p>
+		</div>
+
+		<div class="stats-grid" role="region" aria-label="Usage statistics">
+			<div class="stat-card">
+				<div class="stat-number">{{ stats.total_reminders }}</div>
+				<div class="stat-label">Total Reminders</div>
+			</div>
+			<div class="stat-card">
+				<div class="stat-number">{{ stats.completed_reminders }}</div>
+				<div class="stat-label">Completed</div>
+			</div>
+			<div class="stat-card">
+				<div class="stat-number">{{ stats.today_reminders }}</div>
+				<div class="stat-label">Today's Reminders</div>
+			</div>
+			<div class="stat-card">
+				<div class="stat-number">{{ stats.total_commands }}</div>
+				<div class="stat-label">Total Commands</div>
+			</div>
+		</div>
+
+		<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 30px;" role="region" aria-label="Reminders and command history">
+			<div>
+				<h2>📋 Active Reminders</h2>
+				{% if reminders %}
+					{% for reminder in reminders %}
+						{% if not reminder.completed %}
+						<div class="reminder-item" role="listitem">
+							<strong>#{{ reminder.id }}: {{ reminder.task }}</strong><br>
+							<small>⏰ {{ reminder.time_phrase }} | 🕒 {{ reminder.created_at }}</small>
+						</div>
+						{% endif %}
+					{% endfor %}
+				{% else %}
+					<p>No active reminders</p>
+				{% endif %}
+			</div>
+
+			<div>
+				<h2>📝 Recent Commands</h2>
+				{% if history %}
+					{% for cmd in history %}
+					<div class="reminder-item" role="listitem">
+						<strong>{{ cmd.command }}</strong><br>
+						<small>🕒 {{ cmd.timestamp }}</small>
+					</div>
+					{% endfor %}
+				{% else %}
+					<p>No command history</p>
+				{% endif %}
+			</div>
+		</div>
+
+		<div style="text-align: center;" role="navigation">
+			<a href="/" style="color: #007bff; text-decoration: none; font-weight: bold;" aria-label="Return to main assistant page">← Back to Assistant</a>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AI Personal Assistant</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+</head>
+<body>
+	<div class="container">
+		<div class="header" role="banner">
+			<h1>🤖 AI Personal Assistant</h1>
+			<p>Your intelligent companion for daily tasks and productivity</p>
+		</div>
+
+		<div class="chat-box" id="chatBox" role="log" aria-live="polite">
+			<div class="message assistant-message">
+				<strong>Assistant:</strong> Hello! I'm your AI assistant. I can help with reminders, emails, scheduling, and weather information. Try saying "Remind me to study at 7 PM" or "What's the weather in Mumbai?"
+			</div>
+		</div>
+
+		<div class="input-container">
+			<input type="text" id="userInput" placeholder="Type your command here..." autocomplete="off" aria-label="Enter command for AI assistant">
+			<button onclick="processCommand()" aria-label="Send command">
+				<span>Send</span>
+				<span class="loading-spinner" id="loadingSpinner" style="display: none;">⏳</span>
+			</button>
+		</div>
+
+		<div class="features-grid" role="region" aria-label="Available features">
+			<button class="feature-card" type="button" onclick="quickCommand('Remind me to call mom at 5 PM')">
+				<h3>🎯 Reminders</h3>
+				<p>"Remind me to call mom at 5 PM"</p>
+			</button>
+			<button class="feature-card" type="button" onclick="quickCommand('Send email to professor')">
+				<h3>📧 Email</h3>
+				<p>"Send email to professor" or "Sort my emails"</p>
+			</button>
+			<button class="feature-card" type="button" onclick="quickCommand('Schedule meeting tomorrow')">
+				<h3>📅 Schedule</h3>
+				<p>"Schedule meeting tomorrow"</p>
+			</button>
+			<button class="feature-card" type="button" onclick="quickCommand('Weather in Chennai')">
+				<h3>🌤️ Weather</h3>
+				<p>"Weather in Chennai"</p>
+			</button>
+			<button class="feature-card" type="button" onclick="quickCommand('Suggest resources for Python')">
+				<h3>📚 Resources</h3>
+				<p>"Suggest resources for Python"</p>
+			</button>
+		</div>
+
+		<div class="setup-links" role="navigation">
+			<a href="/dashboard" aria-label="View analytics dashboard">📊 View Dashboard</a>
+			<a href="/setup" aria-label="Setup Google Calendar integration">🔧 Setup Calendar</a>
+			<a href="/status" aria-label="Check system status">📡 System Status</a>
+		</div>
+	</div>
+
+	<script>
+		let isProcessing = false;
+
+		function addMessage(text, isUser = false) {
+			const chatBox = document.getElementById('chatBox');
+			const messageDiv = document.createElement('div');
+			messageDiv.className = isUser ? 'message user-message' : 'message assistant-message';
+			messageDiv.innerHTML = isUser ? text : `<strong>Assistant:</strong> ${text}`;
+			messageDiv.classList.add('new-message');
+			chatBox.appendChild(messageDiv);
+			chatBox.scrollTop = chatBox.scrollHeight;
+		}
+
+		function processCommand() {
+			if (isProcessing) return;
+			const userInput = document.getElementById('userInput');
+			const loadingSpinner = document.getElementById('loadingSpinner');
+			const command = userInput.value.trim();
+			if (!command) {
+				alert('Please enter a command.');
+				return;
+			}
+			isProcessing = true;
+			loadingSpinner.style.display = 'inline';
+			userInput.disabled = true;
+			addMessage(command, true);
+			fetch('/api/process_command', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify({ command: command })
+			})
+			.then(response => {
+				if (!response.ok) {
+					throw new Error('Network response was not ok');
+				}
+				return response.json();
+			})
+			.then(data => {
+				console.log('Response:', data);
+				if (data.status === 'success') {
+					addMessage(data.response);
+					if (data.reminders) {
+						console.log('Reminders updated:', data.reminders);
+					}
+				} else {
+					addMessage(data.response);
+				}
+			})
+			.catch(error => {
+				console.error('Error:', error);
+				addMessage('Sorry, there was an error processing your request. Please try again.');
+			})
+			.finally(() => {
+				isProcessing = false;
+				loadingSpinner.style.display = 'none';
+				userInput.disabled = false;
+				userInput.value = '';
+				userInput.focus();
+			});
+		}
+
+		function quickCommand(text) {
+			const userInput = document.getElementById('userInput');
+			userInput.value = text;
+			processCommand();
+		}
+
+		document.getElementById('userInput').addEventListener('keypress', function(e) {
+			if (e.key === 'Enter' && !isProcessing) {
+				processCommand();
+			}
+		});
+
+		document.addEventListener('DOMContentLoaded', function() {
+			document.getElementById('userInput').focus();
+		});
+
+		const chatBox = document.getElementById('chatBox');
+		chatBox.scrollTop = chatBox.scrollHeight;
+	</script>
+</body>
+</html>
